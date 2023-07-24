@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ثبت محصول جدید</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+		}
+		.container {
+			margin: 50px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			width: 50%;
+		}
+		.form-group {
+			margin-bottom: 10px;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input[type="text"], textarea {
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+			resize: none;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>ثبت محصول جدید</h1>
+		<form action="#" method="post">
+			<div class="form-group">
+				<label for="name">نام محصول:</label>
+				<input type="text" id="name" name="name" placeholder="نام محصول را وارد کنید">
+			</div>
+			<div class="form-group">
+				<label for="description">توضیحات:</label>
+				<textarea id="description" name="description" rows="5" placeholder="توضیحات محصول را وارد کنید"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="price">قیمت:</label>
+				<input type="text" id="price" name="price" placeholder="قیمت محصول را وارد کنید">
+			</div>
+			<input type="submit" value="ثبت محصول">
+		</form>
+	</div>
+<script>
+window.onload = function() {
+    var notFoundPage = document.getElementById("not-found-page");
+    var mainContent = document.getElementById("main-content");
+    if (notFoundPage) {
+        mainContent.innerHTML = notFoundPage.innerHTML;
+    }
+}
+</script>
+</body>
+</html>
